@@ -140,6 +140,79 @@
 
   if (typeof BattleTextParser !== 'undefined') {
     var proto = BattleTextParser.prototype;
+
+    // Compatibility with the newer BattleTextParser renderer.
+    // Old NC2000 Japanese templates use [PLACEHOLDER],
+    // while the current parser expects {PLACEHOLDER}.
+    var originalRender = proto.render;
+    if (originalRender) {
+      proto.render = function (template, values) {
+        template = String(template == null ? '' : template);
+        values = values || {};
+
+        // startBattle / tieBattle changed from two [TRAINER] placeholders
+        // to separate TRAINER1 / TRAINER2 render values.
+        if (
+          (values.TRAINER1 !== undefined || values.TRAINER2 !== undefined) &&
+          template.indexOf('[TRAINER]') >= 0
+        ) {
+          var trainerIndex = 0;
+          template = template.replace(/\[TRAINER\]/g, function () {
+            trainerIndex++;
+            if (trainerIndex === 1) return '{TRAINER1}';
+            if (trainerIndex === 2) return '{TRAINER2}';
+            return '{TRAINER}';
+          });
+        }
+
+        // NC2000: restore missing percent sign for PERCENTAGE values.
+        //
+        // The current BattleTextParser removes a trailing "%" from simple
+        // percentage strings. This affects opponent HP values such as "44%":
+        //
+        //   "44%" -> "44"
+        //
+        // Our own exact HP display may instead arrive as HTML containing "%":
+        //
+        //   <abbr title="...">53.8%</abbr>
+        //
+        // In that case "%" is already present and must NOT be added again.
+        if (
+          template.indexOf('[PERCENTAGE]') >= 0 &&
+          values.PERCENTAGE !== undefined
+        ) {
+          if (typeof values.PERCENTAGE === 'string') {
+            if (values.PERCENTAGE.indexOf('%') < 0) {
+              values = Object.assign({}, values, {
+                PERCENTAGE: values.PERCENTAGE + '%'
+              });
+            }
+          } else if (
+            values.PERCENTAGE &&
+            typeof values.PERCENTAGE === 'object' &&
+            values.PERCENTAGE.value !== undefined
+          ) {
+            var percentageValue = String(values.PERCENTAGE.value);
+            if (percentageValue.indexOf('%') < 0) {
+              values = Object.assign({}, values, {
+                PERCENTAGE: Object.assign({}, values.PERCENTAGE, {
+                  value: percentageValue + '%'
+                })
+              });
+            }
+          }
+        }
+
+        // Convert all remaining legacy placeholders.
+        template = template.replace(
+          /\[([A-Z][A-Z0-9]*)\]/g,
+          '{$1}'
+        );
+
+        return originalRender.call(this, template, values);
+      };
+    }
+
     var originalTemplate = proto.template;
     proto.template = function (type) {
       var namespaces = Array.prototype.slice.call(arguments, 1);
@@ -291,6 +364,7 @@
     'Species Clause: Limit one of each Pokémon': '種族制限: 同じポケモンは1匹まで',
     'Item Clause: Limit 1 of each item': '道具制限: 同じ道具は1個まで',
     'Sleep Clause Mod: Limit one foe put to sleep': 'ねむり制限: 相手を同時に2匹以上ねむり状態にできない',
+    'Stadium Sleep Clause: Limit one foe put to sleep': 'ねむり制限: 相手を同時に2匹以上ねむり状態にできない',
     'Freeze Clause Mod: Limit one foe frozen': 'こおり制限: 相手を同時に2匹以上こおり状態にできない',
     'OHKO Clause: OHKO moves are banned': '一撃必殺技禁止',
     'HP Percentage Mod: HP is shown in percentages': 'HP表示: パーセント表示',
