@@ -728,6 +728,13 @@ class PSUser extends PSStreamModel<PSLoginState | null> {
 		}
 		this.loggingIn = name;
 		this.update(null);
+		if ((window as any).NC2000_PASSWORDLESS_LOGIN) {
+			this.loggingIn = null;
+			PS.send(`/trn ${name},0,`);
+			this.update({ success: true });
+			this.updateRegExp();
+			return;
+		}
 		PSLoginServer.rawQuery(
 			'getassertion', { userid, challstr: this.challstr }
 		).then(res => {
