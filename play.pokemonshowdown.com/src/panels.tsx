@@ -11,7 +11,7 @@
 
 import preact from "../js/lib/preact";
 import type { Pokemon, ServerPokemon } from "./battle";
-import { Dex, PSUtils, toID } from "./battle-dex";
+import { Dex, PSUtils, TL, toID } from "./battle-dex";
 import type { Args } from "./battle-text-parser";
 import { BattleTooltips } from "./battle-tooltips";
 import { Net } from "./client-connection";
@@ -100,7 +100,7 @@ export class PSRouter {
 		const panelState = (PS.leftPanelWidth && room === PS.panel ?
 			PS.leftPanel.id + '..' + PS.rightPanel!.id :
 			room.id);
-		const newTitle = roomid === '' ? 'Showdown!' : `${room.title} - Showdown!`;
+		const newTitle = roomid === '' ? 'Showdown!' : `${room.getTitle()} - Showdown!`;
 		let changed: boolean | null = (roomid !== this.roomid);
 
 		this.roomid = roomid;
@@ -284,7 +284,7 @@ export class PSRoomPanel<T extends PSRoom = PSRoom> extends preact.Component<{ r
 	}
 	override render() {
 		return <PSPanelWrapper room={this.props.room}>
-			<div class="mainmessage"><p>Loading...</p></div>
+			<div class="mainmessage"><p>{TL`Loading...`}</p></div>
 		</PSPanelWrapper>;
 	}
 }
@@ -562,6 +562,9 @@ export class PSView extends preact.Component {
 		if (dx > 0) return scrollX > 1;
 		return true;
 	}
+	static hasTextSelection() {
+		return window.getSelection()?.type === 'Range';
+	}
 	static clearSnap() {
 		if (this.snapTimeout) {
 			clearTimeout(this.snapTimeout);
@@ -689,7 +692,8 @@ export class PSView extends preact.Component {
 		this.snapFrame = requestAnimationFrame(animate);
 	}
 	static startSnapGesture(x: number, y: number, target: EventTarget | null) {
-		if (!this.shouldJSSnap()) return;
+		if (!this.shouldJSSnap() || this.hasTextSelection()) return;
+		if ((target as HTMLInputElement)?.type === 'range') return;
 		this.clearSnap();
 		const now = performance.now();
 		this.snapStart = {
@@ -704,7 +708,16 @@ export class PSView extends preact.Component {
 		this.updateSnapDebug('start');
 	}
 	static moveSnapGesture(x: number, y: number) {
-		if (!this.shouldJSSnap() || !this.snapStart) return false;
+		if (!this.snapStart) return false;
+		if (!this.shouldJSSnap()) {
+			this.clearSnap();
+			return false;
+		}
+		if (this.hasTextSelection()) {
+			this.snapStart = null;
+			this.updateSnapDebug('text selection');
+			return false;
+		}
 		const start = this.snapStart;
 		const now = performance.now();
 		const dx = x - start.x;
@@ -742,7 +755,16 @@ export class PSView extends preact.Component {
 		return true;
 	}
 	static finishSnapGesture(x: number, y: number) {
-		if (!this.shouldJSSnap() || !this.snapStart) return;
+		if (!this.snapStart) return;
+		if (!this.shouldJSSnap()) {
+			this.clearSnap();
+			return;
+		}
+		if (this.hasTextSelection()) {
+			this.snapStart = null;
+			this.updateSnapDebug('text selection');
+			return;
+		}
 		const now = performance.now();
 		const dx = x - this.snapStart.x;
 		const dy = y - this.snapStart.y;
@@ -1695,14 +1717,14 @@ export function PSIcon(
 		return <span class="itemicon" style={Dex.getItemIcon(props.item)} />;
 	}
 	if ('type' in props) {
-		let type = Dex.types.get(props.type).name;
-		if (!type) type = '???';
+		const type = Dex.types.get(props.type);
+		const typeName = type.name || '???';
 		if (props.new) {
-			return <span class={`typeicon typeicon-${type}${props.tera ? ' tera' : ''}`}>{type}</span>;
+			return <span class={`typeicon typeicon-${typeName}${props.tera ? ' tera' : ''}`}>{TL(type)}</span>;
 		}
-		let sanitizedType = type.replace(/\?/g, '%3f');
+		const sanitizedType = typeName.replace(/\?/g, '%3f');
 		return <img
-			src={`${Dex.resourcePrefix}sprites/types/${sanitizedType}.png`} alt={type}
+			src={`${Dex.resourcePrefix}sprites/types/${sanitizedType}.png`} alt={Dex.text.typeName(typeName)}
 			height="14" width="32" class={`pixelated${props.b ? ' b' : ''}`} style="vertical-align:middle"
 		/>;
 	}
@@ -1720,14 +1742,15 @@ export function PSIcon(
 			break;
 		}
 		return <img
-			src={`${Dex.resourcePrefix}sprites/categories/${sanitizedCategory}.png`} alt={sanitizedCategory}
+			src={`${Dex.resourcePrefix}sprites/categories/${sanitizedCategory}.png`}
+			alt={Dex.text.categoryName(sanitizedCategory)}
 			height="14" width="32" class="pixelated" style="vertical-align:middle"
 		/>;
 	}
 	if ('gender' in props) {
 		return <img
 			src={`${Dex.resourcePrefix}sprites/misc/gender-${props.gender.toLowerCase()}.png`}
-			width={18} height={18} alt={props.gender} style="margin-top: -1px; filter: grayscale(30%)"
+			width={18} height={18} alt={Dex.text.genderName(props.gender)} style="margin-top: -1px; filter: grayscale(30%)"
 		/>;
 	}
 	return null!;
