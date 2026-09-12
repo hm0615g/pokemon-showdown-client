@@ -1,0 +1,685 @@
+kind	english	japanese
+pokemon	Bulbasaur	フシギダネ
+pokemon	Ivysaur	フシギソウ
+pokemon	Venusaur	フシギバナ
+pokemon	Venusaur-Gmax	フシギバナ
+pokemon	Venusaur-Mega	フシギバナ
+pokemon	Charmander	ヒトカゲ
+pokemon	Charmeleon	リザード
+pokemon	Charizard	リザードン
+pokemon	Charizard-Gmax	リザードン
+pokemon	Charizard-Mega-X	リザードン
+pokemon	Charizard-Mega-Y	リザードン
+pokemon	Squirtle	ゼニガメ
+pokemon	Wartortle	カメール
+pokemon	Blastoise	カメックス
+pokemon	Blastoise-Gmax	カメックス
+pokemon	Blastoise-Mega	カメックス
+pokemon	Caterpie	キャタピー
+pokemon	Metapod	トランセル
+pokemon	Butterfree	バタフリー
+pokemon	Butterfree-Gmax	バタフリー
+pokemon	Weedle	ビードル
+pokemon	Kakuna	コクーン
+pokemon	Beedrill	スピアー
+pokemon	Beedrill-Mega	スピアー
+pokemon	Pidgey	ポッポ
+pokemon	Pidgeotto	ピジョン
+pokemon	Pidgeot	ピジョット
+pokemon	Pidgeot-Mega	ピジョット
+pokemon	Rattata	コラッタ
+pokemon	Rattata-Alola	コラッタ
+pokemon	Raticate	ラッタ
+pokemon	Raticate-Alola	ラッタ
+pokemon	Raticate-Alola-Totem	ラッタ
+pokemon	Spearow	オニスズメ
+pokemon	Fearow	オニドリル
+pokemon	Ekans	アーボ
+pokemon	Arbok	アーボック
+pokemon	Pikachu	ピカチュウ
+pokemon	Pikachu-Alola	ピカチュウ
+pokemon	Pikachu-Belle	ピカチュウ
+pokemon	Pikachu-Cosplay	ピカチュウ
+pokemon	Pikachu-Gmax	ピカチュウ
+pokemon	Pikachu-Hoenn	ピカチュウ
+pokemon	Pikachu-Kalos	ピカチュウ
+pokemon	Pikachu-Libre	ピカチュウ
+pokemon	Pikachu-Original	ピカチュウ
+pokemon	Pikachu-Partner	ピカチュウ
+pokemon	Pikachu-PhD	ピカチュウ
+pokemon	Pikachu-Pop-Star	ピカチュウ
+pokemon	Pikachu-Rock-Star	ピカチュウ
+pokemon	Pikachu-Sinnoh	ピカチュウ
+pokemon	Pikachu-Starter	ピカチュウ
+pokemon	Pikachu-Unova	ピカチュウ
+pokemon	Pikachu-World	ピカチュウ
+pokemon	Raichu	ライチュウ
+pokemon	Raichu-Alola	ライチュウ
+pokemon	Raichu-Mega-X	ライチュウ
+pokemon	Raichu-Mega-Y	ライチュウ
+pokemon	Sandshrew	サンド
+pokemon	Sandshrew-Alola	サンド
+pokemon	Sandslash	サンドパン
+pokemon	Sandslash-Alola	サンドパン
+pokemon	Nidoran-F	ニドラン♀
+pokemon	Nidorina	ニドリーナ
+pokemon	Nidoqueen	ニドクイン
+pokemon	Nidoran-M	ニドラン♂
+pokemon	Nidorino	ニドリーノ
+pokemon	Nidoking	ニドキング
+pokemon	Clefairy	ピッピ
+pokemon	Clefable	ピクシー
+pokemon	Clefable-Mega	ピクシー
+pokemon	Vulpix	ロコン
+pokemon	Vulpix-Alola	ロコン
+pokemon	Ninetales	キュウコン
+pokemon	Ninetales-Alola	キュウコン
+pokemon	Jigglypuff	プリン
+pokemon	Wigglytuff	プクリン
+pokemon	Zubat	ズバット
+pokemon	Golbat	ゴルバット
+pokemon	Oddish	ナゾノクサ
+pokemon	Gloom	クサイハナ
+pokemon	Vileplume	ラフレシア
+pokemon	Paras	パラス
+pokemon	Parasect	パラセクト
+pokemon	Venonat	コンパン
+pokemon	Venomoth	モルフォン
+pokemon	Diglett	ディグダ
+pokemon	Diglett-Alola	ディグダ
+pokemon	Dugtrio	ダグトリオ
+pokemon	Dugtrio-Alola	ダグトリオ
+pokemon	Meowth	ニャース
+pokemon	Meowth-Alola	ニャース
+pokemon	Meowth-Galar	ニャース
+pokemon	Meowth-Gmax	ニャース
+pokemon	Persian	ペルシアン
+pokemon	Persian-Alola	ペルシアン
+pokemon	Psyduck	コダック
+pokemon	Golduck	ゴルダック
+pokemon	Mankey	マンキー
+pokemon	Primeape	オコリザル
+pokemon	Growlithe	ガーディ
+pokemon	Growlithe-Hisui	ガーディ
+pokemon	Arcanine	ウインディ
+pokemon	Arcanine-Hisui	ウインディ
+pokemon	Poliwag	ニョロモ
+pokemon	Poliwhirl	ニョロゾ
+pokemon	Poliwrath	ニョロボン
+pokemon	Abra	ケーシィ
+pokemon	Kadabra	ユンゲラー
+pokemon	Alakazam	フーディン
+pokemon	Alakazam-Mega	フーディン
+pokemon	Machop	ワンリキー
+pokemon	Machoke	ゴーリキー
+pokemon	Machamp	カイリキー
+pokemon	Machamp-Gmax	カイリキー
+pokemon	Bellsprout	マダツボミ
+pokemon	Weepinbell	ウツドン
+pokemon	Victreebel	ウツボット
+pokemon	Victreebel-Mega	ウツボット
+pokemon	Tentacool	メノクラゲ
+pokemon	Tentacruel	ドククラゲ
+pokemon	Geodude	イシツブテ
+pokemon	Geodude-Alola	イシツブテ
+pokemon	Graveler	ゴローン
+pokemon	Graveler-Alola	ゴローン
+pokemon	Golem	ゴローニャ
+pokemon	Golem-Alola	ゴローニャ
+pokemon	Ponyta	ポニータ
+pokemon	Ponyta-Galar	ポニータ
+pokemon	Rapidash	ギャロップ
+pokemon	Rapidash-Galar	ギャロップ
+pokemon	Slowpoke	ヤドン
+pokemon	Slowpoke-Galar	ヤドン
+pokemon	Slowbro	ヤドラン
+pokemon	Slowbro-Galar	ヤドラン
+pokemon	Slowbro-Mega	ヤドラン
+pokemon	Magnemite	コイル
+pokemon	Magneton	レアコイル
+pokemon	Farfetch’d	カモネギ
+pokemon	Farfetch’d-Galar	カモネギ
+pokemon	Doduo	ドードー
+pokemon	Dodrio	ドードリオ
+pokemon	Seel	パウワウ
+pokemon	Dewgong	ジュゴン
+pokemon	Grimer	ベトベター
+pokemon	Grimer-Alola	ベトベター
+pokemon	Muk	ベトベトン
+pokemon	Muk-Alola	ベトベトン
+pokemon	Shellder	シェルダー
+pokemon	Cloyster	パルシェン
+pokemon	Gastly	ゴース
+pokemon	Haunter	ゴースト
+pokemon	Gengar	ゲンガー
+pokemon	Gengar-Gmax	ゲンガー
+pokemon	Gengar-Mega	ゲンガー
+pokemon	Onix	イワーク
+pokemon	Drowzee	スリープ
+pokemon	Hypno	スリーパー
+pokemon	Krabby	クラブ
+pokemon	Kingler	キングラー
+pokemon	Kingler-Gmax	キングラー
+pokemon	Voltorb	ビリリダマ
+pokemon	Voltorb-Hisui	ビリリダマ
+pokemon	Electrode	マルマイン
+pokemon	Electrode-Hisui	マルマイン
+pokemon	Exeggcute	タマタマ
+pokemon	Exeggutor	ナッシー
+pokemon	Exeggutor-Alola	ナッシー
+pokemon	Cubone	カラカラ
+pokemon	Marowak	ガラガラ
+pokemon	Marowak-Alola	ガラガラ
+pokemon	Marowak-Alola-Totem	ガラガラ
+pokemon	Hitmonlee	サワムラー
+pokemon	Hitmonchan	エビワラー
+pokemon	Lickitung	ベロリンガ
+pokemon	Koffing	ドガース
+pokemon	Weezing	マタドガス
+pokemon	Weezing-Galar	マタドガス
+pokemon	Rhyhorn	サイホーン
+pokemon	Rhydon	サイドン
+pokemon	Chansey	ラッキー
+pokemon	Tangela	モンジャラ
+pokemon	Kangaskhan	ガルーラ
+pokemon	Kangaskhan-Mega	ガルーラ
+pokemon	Horsea	タッツー
+pokemon	Seadra	シードラ
+pokemon	Goldeen	トサキント
+pokemon	Seaking	アズマオウ
+pokemon	Staryu	ヒトデマン
+pokemon	Starmie	スターミー
+pokemon	Starmie-Mega	スターミー
+pokemon	Mr. Mime	バリヤード
+pokemon	Mr. Mime-Galar	バリヤード
+pokemon	Scyther	ストライク
+pokemon	Jynx	ルージュラ
+pokemon	Electabuzz	エレブー
+pokemon	Magmar	ブーバー
+pokemon	Pinsir	カイロス
+pokemon	Pinsir-Mega	カイロス
+pokemon	Tauros	ケンタロス
+pokemon	Tauros-Paldea-Aqua	ケンタロス
+pokemon	Tauros-Paldea-Blaze	ケンタロス
+pokemon	Tauros-Paldea-Combat	ケンタロス
+pokemon	Magikarp	コイキング
+pokemon	Gyarados	ギャラドス
+pokemon	Gyarados-Mega	ギャラドス
+pokemon	Lapras	ラプラス
+pokemon	Lapras-Gmax	ラプラス
+pokemon	Ditto	メタモン
+pokemon	Eevee	イーブイ
+pokemon	Eevee-Gmax	イーブイ
+pokemon	Eevee-Starter	イーブイ
+pokemon	Vaporeon	シャワーズ
+pokemon	Jolteon	サンダース
+pokemon	Flareon	ブースター
+pokemon	Porygon	ポリゴン
+pokemon	Omanyte	オムナイト
+pokemon	Omastar	オムスター
+pokemon	Kabuto	カブト
+pokemon	Kabutops	カブトプス
+pokemon	Aerodactyl	プテラ
+pokemon	Aerodactyl-Mega	プテラ
+pokemon	Snorlax	カビゴン
+pokemon	Snorlax-Gmax	カビゴン
+pokemon	Articuno	フリーザー
+pokemon	Articuno-Galar	フリーザー
+pokemon	Zapdos	サンダー
+pokemon	Zapdos-Galar	サンダー
+pokemon	Moltres	ファイヤー
+pokemon	Moltres-Galar	ファイヤー
+pokemon	Dratini	ミニリュウ
+pokemon	Dragonair	ハクリュー
+pokemon	Dragonite	カイリュー
+pokemon	Dragonite-Mega	カイリュー
+pokemon	Mewtwo	ミュウツー
+pokemon	Mewtwo-Mega-X	ミュウツー
+pokemon	Mewtwo-Mega-Y	ミュウツー
+pokemon	Mew	ミュウ
+pokemon	Chikorita	チコリータ
+pokemon	Bayleef	ベイリーフ
+pokemon	Meganium	メガニウム
+pokemon	Meganium-Mega	メガニウム
+pokemon	Cyndaquil	ヒノアラシ
+pokemon	Quilava	マグマラシ
+pokemon	Typhlosion	バクフーン
+pokemon	Typhlosion-Hisui	バクフーン
+pokemon	Totodile	ワニノコ
+pokemon	Croconaw	アリゲイツ
+pokemon	Feraligatr	オーダイル
+pokemon	Feraligatr-Mega	オーダイル
+pokemon	Sentret	オタチ
+pokemon	Furret	オオタチ
+pokemon	Hoothoot	ホーホー
+pokemon	Noctowl	ヨルノズク
+pokemon	Ledyba	レディバ
+pokemon	Ledian	レディアン
+pokemon	Spinarak	イトマル
+pokemon	Ariados	アリアドス
+pokemon	Crobat	クロバット
+pokemon	Chinchou	チョンチー
+pokemon	Lanturn	ランターン
+pokemon	Pichu	ピチュー
+pokemon	Pichu-Spiky-eared	ピチュー
+pokemon	Cleffa	ピィ
+pokemon	Igglybuff	ププリン
+pokemon	Togepi	トゲピー
+pokemon	Togetic	トゲチック
+pokemon	Natu	ネイティ
+pokemon	Xatu	ネイティオ
+pokemon	Mareep	メリープ
+pokemon	Flaaffy	モココ
+pokemon	Ampharos	デンリュウ
+pokemon	Ampharos-Mega	デンリュウ
+pokemon	Bellossom	キレイハナ
+pokemon	Marill	マリル
+pokemon	Azumarill	マリルリ
+pokemon	Sudowoodo	ウソッキー
+pokemon	Politoed	ニョロトノ
+pokemon	Hoppip	ハネッコ
+pokemon	Skiploom	ポポッコ
+pokemon	Jumpluff	ワタッコ
+pokemon	Aipom	エイパム
+pokemon	Sunkern	ヒマナッツ
+pokemon	Sunflora	キマワリ
+pokemon	Yanma	ヤンヤンマ
+pokemon	Wooper	ウパー
+pokemon	Wooper-Paldea	ウパー
+pokemon	Quagsire	ヌオー
+pokemon	Espeon	エーフィ
+pokemon	Umbreon	ブラッキー
+pokemon	Murkrow	ヤミカラス
+pokemon	Slowking	ヤドキング
+pokemon	Slowking-Galar	ヤドキング
+pokemon	Misdreavus	ムウマ
+pokemon	Unown	アンノーン
+pokemon	Wobbuffet	ソーナンス
+pokemon	Girafarig	キリンリキ
+pokemon	Pineco	クヌギダマ
+pokemon	Forretress	フォレトス
+pokemon	Dunsparce	ノコッチ
+pokemon	Gligar	グライガー
+pokemon	Steelix	ハガネール
+pokemon	Steelix-Mega	ハガネール
+pokemon	Snubbull	ブルー
+pokemon	Granbull	グランブル
+pokemon	Qwilfish	ハリーセン
+pokemon	Qwilfish-Hisui	ハリーセン
+pokemon	Scizor	ハッサム
+pokemon	Scizor-Mega	ハッサム
+pokemon	Shuckle	ツボツボ
+pokemon	Heracross	ヘラクロス
+pokemon	Heracross-Mega	ヘラクロス
+pokemon	Sneasel	ニューラ
+pokemon	Sneasel-Hisui	ニューラ
+pokemon	Teddiursa	ヒメグマ
+pokemon	Ursaring	リングマ
+pokemon	Slugma	マグマッグ
+pokemon	Magcargo	マグカルゴ
+pokemon	Swinub	ウリムー
+pokemon	Piloswine	イノムー
+pokemon	Corsola	サニーゴ
+pokemon	Corsola-Galar	サニーゴ
+pokemon	Remoraid	テッポウオ
+pokemon	Octillery	オクタン
+pokemon	Delibird	デリバード
+pokemon	Mantine	マンタイン
+pokemon	Skarmory	エアームド
+pokemon	Skarmory-Mega	エアームド
+pokemon	Houndour	デルビル
+pokemon	Houndoom	ヘルガー
+pokemon	Houndoom-Mega	ヘルガー
+pokemon	Kingdra	キングドラ
+pokemon	Phanpy	ゴマゾウ
+pokemon	Donphan	ドンファン
+pokemon	Porygon2	ポリゴン２
+pokemon	Stantler	オドシシ
+pokemon	Smeargle	ドーブル
+pokemon	Tyrogue	バルキー
+pokemon	Hitmontop	カポエラー
+pokemon	Smoochum	ムチュール
+pokemon	Elekid	エレキッド
+pokemon	Magby	ブビィ
+pokemon	Miltank	ミルタンク
+pokemon	Blissey	ハピナス
+pokemon	Raikou	ライコウ
+pokemon	Entei	エンテイ
+pokemon	Suicune	スイクン
+pokemon	Larvitar	ヨーギラス
+pokemon	Pupitar	サナギラス
+pokemon	Tyranitar	バンギラス
+pokemon	Tyranitar-Mega	バンギラス
+pokemon	Lugia	ルギア
+pokemon	Ho-Oh	ホウオウ
+pokemon	Celebi	セレビィ
+move	Pound	はたく
+move	Karate Chop	からてチョップ
+move	Double Slap	おうふくビンタ
+move	Comet Punch	れんぞくパンチ
+move	Mega Punch	メガトンパンチ
+move	Pay Day	ネコにこばん
+move	Fire Punch	ほのおのパンチ
+move	Ice Punch	れいとうパンチ
+move	Thunder Punch	かみなりパンチ
+move	Scratch	ひっかく
+move	Vise Grip	はさむ
+move	Guillotine	ハサミギロチン
+move	Razor Wind	かまいたち
+move	Swords Dance	つるぎのまい
+move	Cut	いあいぎり
+move	Gust	かぜおこし
+move	Wing Attack	つばさでうつ
+move	Whirlwind	ふきとばし
+move	Fly	そらをとぶ
+move	Bind	しめつける
+move	Slam	たたきつける
+move	Vine Whip	つるのムチ
+move	Stomp	ふみつけ
+move	Double Kick	にどげり
+move	Mega Kick	メガトンキック
+move	Jump Kick	とびげり
+move	Rolling Kick	まわしげり
+move	Sand Attack	すなかけ
+move	Headbutt	ずつき
+move	Horn Attack	つのでつく
+move	Fury Attack	みだれづき
+move	Horn Drill	つのドリル
+move	Tackle	たいあたり
+move	Body Slam	のしかかり
+move	Wrap	まきつく
+move	Take Down	とっしん
+move	Thrash	あばれる
+move	Double-Edge	すてみタックル
+move	Tail Whip	しっぽをふる
+move	Poison Sting	どくばり
+move	Twineedle	ダブルニードル
+move	Pin Missile	ミサイルばり
+move	Leer	にらみつける
+move	Bite	かみつく
+move	Growl	なきごえ
+move	Roar	ほえる
+move	Sing	うたう
+move	Supersonic	ちょうおんぱ
+move	Sonic Boom	ソニックブーム
+move	Disable	かなしばり
+move	Acid	ようかいえき
+move	Ember	ひのこ
+move	Flamethrower	かえんほうしゃ
+move	Mist	しろいきり
+move	Water Gun	みずでっぽう
+move	Hydro Pump	ハイドロポンプ
+move	Surf	なみのり
+move	Ice Beam	れいとうビーム
+move	Blizzard	ふぶき
+move	Psybeam	サイケこうせん
+move	Bubble Beam	バブルこうせん
+move	Aurora Beam	オーロラビーム
+move	Hyper Beam	はかいこうせん
+move	Peck	つつく
+move	Drill Peck	ドリルくちばし
+move	Submission	じごくぐるま
+move	Low Kick	けたぐり
+move	Counter	カウンター
+move	Seismic Toss	ちきゅうなげ
+move	Strength	かいりき
+move	Absorb	すいとる
+move	Mega Drain	メガドレイン
+move	Leech Seed	やどりぎのタネ
+move	Growth	せいちょう
+move	Razor Leaf	はっぱカッター
+move	Solar Beam	ソーラービーム
+move	Poison Powder	どくのこな
+move	Stun Spore	しびれごな
+move	Sleep Powder	ねむりごな
+move	Petal Dance	はなびらのまい
+move	String Shot	いとをはく
+move	Dragon Rage	りゅうのいかり
+move	Fire Spin	ほのおのうず
+move	Thunder Shock	でんきショック
+move	Thunderbolt	１０まんボルト
+move	Thunder Wave	でんじは
+move	Thunder	かみなり
+move	Rock Throw	いわおとし
+move	Earthquake	じしん
+move	Fissure	じわれ
+move	Dig	あなをほる
+move	Toxic	どくどく
+move	Confusion	ねんりき
+move	Psychic	サイコキネシス
+move	Hypnosis	さいみんじゅつ
+move	Meditate	ヨガのポーズ
+move	Agility	こうそくいどう
+move	Quick Attack	でんこうせっか
+move	Rage	いかり
+move	Teleport	テレポート
+move	Night Shade	ナイトヘッド
+move	Mimic	ものまね
+move	Screech	いやなおと
+move	Double Team	かげぶんしん
+move	Recover	じこさいせい
+move	Harden	かたくなる
+move	Minimize	ちいさくなる
+move	Smokescreen	えんまく
+move	Confuse Ray	あやしいひかり
+move	Withdraw	からにこもる
+move	Defense Curl	まるくなる
+move	Barrier	バリアー
+move	Light Screen	ひかりのかべ
+move	Haze	くろいきり
+move	Reflect	リフレクター
+move	Focus Energy	きあいだめ
+move	Bide	がまん
+move	Metronome	ゆびをふる
+move	Mirror Move	オウムがえし
+move	Self-Destruct	じばく
+move	Egg Bomb	タマゴばくだん
+move	Lick	したでなめる
+move	Smog	スモッグ
+move	Sludge	ヘドロこうげき
+move	Bone Club	ホネこんぼう
+move	Fire Blast	だいもんじ
+move	Waterfall	たきのぼり
+move	Clamp	からではさむ
+move	Swift	スピードスター
+move	Skull Bash	ロケットずつき
+move	Spike Cannon	とげキャノン
+move	Constrict	からみつく
+move	Amnesia	ドわすれ
+move	Kinesis	スプーンまげ
+move	Soft-Boiled	タマゴうみ
+move	High Jump Kick	とびひざげり
+move	Glare	へびにらみ
+move	Dream Eater	ゆめくい
+move	Poison Gas	どくガス
+move	Barrage	たまなげ
+move	Leech Life	きゅうけつ
+move	Lovely Kiss	あくまのキッス
+move	Sky Attack	ゴッドバード
+move	Transform	へんしん
+move	Bubble	あわ
+move	Dizzy Punch	ピヨピヨパンチ
+move	Spore	キノコのほうし
+move	Flash	フラッシュ
+move	Psywave	サイコウェーブ
+move	Splash	はねる
+move	Acid Armor	とける
+move	Crabhammer	クラブハンマー
+move	Explosion	だいばくはつ
+move	Fury Swipes	みだれひっかき
+move	Bonemerang	ホネブーメラン
+move	Rest	ねむる
+move	Rock Slide	いわなだれ
+move	Hyper Fang	ひっさつまえば
+move	Sharpen	かくばる
+move	Conversion	テクスチャー
+move	Tri Attack	トライアタック
+move	Super Fang	いかりのまえば
+move	Slash	きりさく
+move	Substitute	みがわり
+move	Struggle	わるあがき
+move	Sketch	スケッチ
+move	Triple Kick	トリプルキック
+move	Thief	どろぼう
+move	Spider Web	クモのす
+move	Mind Reader	こころのめ
+move	Nightmare	あくむ
+move	Flame Wheel	かえんぐるま
+move	Snore	いびき
+move	Curse	のろい
+move	Flail	じたばた
+move	Conversion 2	テクスチャー２
+move	Aeroblast	エアロブラスト
+move	Cotton Spore	わたほうし
+move	Reversal	きしかいせい
+move	Spite	うらみ
+move	Powder Snow	こなゆき
+move	Protect	まもる
+move	Mach Punch	マッハパンチ
+move	Scary Face	こわいかお
+move	Feint Attack	だましうち
+move	Sweet Kiss	てんしのキッス
+move	Belly Drum	はらだいこ
+move	Sludge Bomb	ヘドロばくだん
+move	Mud-Slap	どろかけ
+move	Octazooka	オクタンほう
+move	Spikes	まきびし
+move	Zap Cannon	でんじほう
+move	Foresight	みやぶる
+move	Destiny Bond	みちづれ
+move	Perish Song	ほろびのうた
+move	Icy Wind	こごえるかぜ
+move	Detect	みきり
+move	Bone Rush	ボーンラッシュ
+move	Lock-On	ロックオン
+move	Outrage	げきりん
+move	Sandstorm	すなあらし
+move	Giga Drain	ギガドレイン
+move	Endure	こらえる
+move	Charm	あまえる
+move	Rollout	ころがる
+move	False Swipe	みねうち
+move	Swagger	いばる
+move	Milk Drink	ミルクのみ
+move	Spark	スパーク
+move	Fury Cutter	れんぞくぎり
+move	Steel Wing	はがねのつばさ
+move	Mean Look	くろいまなざし
+move	Attract	メロメロ
+move	Sleep Talk	ねごと
+move	Heal Bell	いやしのすず
+move	Return	おんがえし
+move	Present	プレゼント
+move	Frustration	やつあたり
+move	Safeguard	しんぴのまもり
+move	Pain Split	いたみわけ
+move	Sacred Fire	せいなるほのお
+move	Magnitude	マグニチュード
+move	Dynamic Punch	ばくれつパンチ
+move	Megahorn	メガホーン
+move	Dragon Breath	りゅうのいぶき
+move	Baton Pass	バトンタッチ
+move	Encore	アンコール
+move	Pursuit	おいうち
+move	Rapid Spin	こうそくスピン
+move	Sweet Scent	あまいかおり
+move	Iron Tail	アイアンテール
+move	Metal Claw	メタルクロー
+move	Vital Throw	あてみなげ
+move	Morning Sun	あさのひざし
+move	Synthesis	こうごうせい
+move	Moonlight	つきのひかり
+move	Hidden Power	めざめるパワー
+move	Hidden Power Bug	めざめるパワー
+move	Hidden Power Dark	めざめるパワー
+move	Hidden Power Dragon	めざめるパワー
+move	Hidden Power Electric	めざめるパワー
+move	Hidden Power Fighting	めざめるパワー
+move	Hidden Power Fire	めざめるパワー
+move	Hidden Power Flying	めざめるパワー
+move	Hidden Power Ghost	めざめるパワー
+move	Hidden Power Grass	めざめるパワー
+move	Hidden Power Ground	めざめるパワー
+move	Hidden Power Ice	めざめるパワー
+move	Hidden Power Poison	めざめるパワー
+move	Hidden Power Psychic	めざめるパワー
+move	Hidden Power Rock	めざめるパワー
+move	Hidden Power Steel	めざめるパワー
+move	Hidden Power Water	めざめるパワー
+move	Cross Chop	クロスチョップ
+move	Twister	たつまき
+move	Rain Dance	あまごい
+move	Sunny Day	にほんばれ
+move	Crunch	かみくだく
+move	Mirror Coat	ミラーコート
+move	Psych Up	じこあんじ
+move	Extreme Speed	しんそく
+move	Ancient Power	げんしのちから
+move	Shadow Ball	シャドーボール
+move	Future Sight	みらいよち
+move	Rock Smash	いわくだき
+move	Whirlpool	うずしお
+move	Beat Up	ふくろだたき
+item	Berry	きのみ
+item	Berry Juice	きのみジュース
+item	Berserk Gene	はかいのいでんし
+item	Bitter Berry	にがいきのみ
+item	Black Belt	くろおび
+item	Black Glasses	くろいメガネ
+item	Bright Powder	ひかりのこな
+item	Burnt Berry	やけたきのみ
+item	Charcoal	もくたん
+item	Dragon Fang	りゅうのキバ
+item	Dragon Scale	りゅうのウロコ
+item	Fast Ball	スピードボール
+item	Fire Stone	ほのおのいし
+item	Focus Band	きあいのハチマキ
+item	Friend Ball	フレンドボール
+item	Gold Berry	おうごんのみ
+item	Great Ball	スーパーボール
+item	Hard Stone	かたいいし
+item	Heavy Ball	ヘビーボール
+item	Ice Berry	こおったきのみ
+item	King's Rock	おうじゃのしるし
+item	Leaf Stone	リーフのいし
+item	Leftovers	たべのこし
+item	Level Ball	レベルボール
+item	Light Ball	でんきだま
+item	Love Ball	ラブラブボール
+item	Lucky Punch	ラッキーパンチ
+item	Lure Ball	ルアーボール
+item	Magnet	じしゃく
+item	Mail	メール
+item	Master Ball	マスターボール
+item	Metal Coat	メタルコート
+item	Metal Powder	メタルパウダー
+item	Mint Berry	はっかのみ
+item	Miracle Berry	きせきのみ
+item	Miracle Seed	きせきのタネ
+item	Moon Ball	ムーンボール
+item	Moon Stone	つきのいし
+item	Mystery Berry	ふしぎなきのみ
+item	Mystic Water	しんぴのしずく
+item	Never-Melt Ice	とけないこおり
+item	Pink Bow	ぴんくのリボン
+item	Poison Barb	どくバリ
+item	Poke Ball	モンスターボール
+item	Polkadot Bow	みずたまリボン
+item	PRZ Cure Berry	まひなおしのみ
+item	PSN Cure Berry	どくけしのみ
+item	Quick Claw	せんせいのツメ
+item	Safari Ball	サファリボール
+item	Scope Lens	ピントレンズ
+item	Sharp Beak	するどいくちばし
+item	Silver Powder	ぎんのこな
+item	Soft Sand	やわらかいすな
+item	Spell Tag	のろいのおふだ
+item	Sport Ball	コンペボール
+item	Stick	ながねぎ
+item	Sun Stone	たいようのいし
+item	Thick Club	ふといホネ
+item	Thunder Stone	かみなりのいし
+item	Twisted Spoon	まがったスプーン
+item	Ultra Ball	ハイパーボール
+item	Up-Grade	アップグレード
+item	Water Stone	みずのいし
