@@ -61,23 +61,7 @@ _this2.update(null);
 });
 };_proto.
 upload=function upload(isPrivate){
-var team=this.team;
-var cmd=team.uploaded?'update':'save';
-
-var buf=[];
-if(team.uploaded){
-buf.push(team.uploaded.teamid);
-}else if(team.teamid){
-return PS.alert(TL(["This team is for a different account. Please log into the correct account to update it."]));
-}
-buf.push(team.name,team.format,isPrivate?1:0);
-var exported=team.packedTeam;
-if(!exported)return PS.alert(TL(["Add a Pok\xE9mon to your team before uploading it."]));
-buf.push(exported);
-PS.teams.uploading=team;
-PS.send("/teams "+cmd+" "+buf.join(', '));
-team.uploadedPackedTeam=exported;
-this.update(null);
+return PS.alert(TL(["Team uploading is unavailable in this client."]));
 };_proto.
 cancelUpload=function cancelUpload(){
 PS.teams.uploading=null;
@@ -415,40 +399,10 @@ team=void 0;_this5.
 teamData=
 
 null;return _this5;}_inheritsLoose(ViewTeamPanel,_PSRoomPanel2);var _proto3=ViewTeamPanel.prototype;_proto3.
-componentDidMount=function componentDidMount(){var _this6=this;
+componentDidMount=function componentDidMount(){
 _PSRoomPanel2.prototype.componentDidMount.call(this);
-var roomid=this.props.room.id;
-var _roomid$slice$split=roomid.slice(9).split('-'),teamid=_roomid$slice$split[0],password=_roomid$slice$split[1];
-PSLoginServer.query('getteam',{
-teamid:teamid,
-password:password,
-full:true
-}).then(function(untypedData){
-var data=untypedData;
-if(!data){
-_this6.team=null;
-return;
-}
-_this6.team={
-name:data.title,
-format:data.format,
-folder:'',
-packedTeam:data.team,
-iconCache:null,
-key:'',
-isBox:false,
-teamid:parseInt(teamid)
-};for(var _i10=0,_PS$teams$list2=
-PS.teams.list;_i10<_PS$teams$list2.length;_i10++){var localTeam=_PS$teams$list2[_i10];
-if(localTeam.teamid===_this6.team.teamid){
-_this6.team.key=localTeam.key;
-break;
-}
-}
-_this6.props.room.title="[Team] "+(_this6.team.name||'Untitled team');
-_this6.teamData=data;
+this.team=null;
 PS.update();
-});
 };_proto3.
 
 render=function render(){
@@ -486,26 +440,18 @@ TeamStoragePanel=function(_PSRoomPanel3){function TeamStoragePanel(){var _this7;
 
 
 
-chooseOption=function(ev){var _team$uploaded,_team$uploaded2;
+chooseOption=function(ev){
 var storage=ev.currentTarget.value;
 var room=_this7.props.room;
 var team=_this7.team();
-
 if(storage==='local'&&team.uploaded){
-PS.send("/teams delete "+team.uploaded.teamid);
 team.uploaded=undefined;
 team.teamid=undefined;
 team.uploadedPackedTeam=undefined;
 PS.teams.save();
 room.getParent().update(null);
-}else if(storage==='public'&&(_team$uploaded=team.uploaded)!=null&&_team$uploaded["private"]){
-PS.send("/teams setprivacy "+team.uploaded.teamid+",no");
-}else if(storage==='account'&&((_team$uploaded2=team.uploaded)==null?void 0:_team$uploaded2["private"])===null){
-PS.send("/teams setprivacy "+team.uploaded.teamid+",yes");
-}else if(storage==='public'&&!team.teamid){
-room.getParent().upload(false);
-}else if(storage==='account'&&!team.teamid){
-room.getParent().upload(true);
+}else if(storage!=='local'){
+return PS.alert(TL(["Team uploading is unavailable in this client."]));
 }
 ev.stopImmediatePropagation();
 ev.preventDefault();
