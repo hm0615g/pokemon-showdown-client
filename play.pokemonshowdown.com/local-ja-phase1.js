@@ -8,6 +8,11 @@
     throw new Error('NC2000 Japanese dictionary is not loaded.');
   }
 
+  var descriptions = window.NC2000_JA_DESCRIPTIONS;
+  if (!descriptions || !descriptions.moves || !descriptions.items) {
+    throw new Error('NC2000 Japanese description dictionary is not loaded.');
+  }
+
   var sections = {
     pokemon: names.pokemon,
     move: names.moves,
@@ -259,6 +264,9 @@
         var move = this.props.search.dex.moves.get(moveId);
         if (move && move.exists) {
           html = replaceSpanContents(html, 'col movenamecol', displayName('move', move.name));
+          if (descriptions.moves[move.id]) {
+            html = replaceSpanContents(html, 'col movedesccol', descriptions.moves[move.id]);
+          }
         }
       }
       return html;
@@ -271,6 +279,9 @@
         var item = this.props.search.dex.items.get(id);
         if (item && item.exists) {
           html = replaceSpanContents(html, 'col namecol', displayName('item', item.name));
+          if (descriptions.items[item.id]) {
+            html = replaceSpanContents(html, 'col itemdesccol', descriptions.items[item.id]);
+          }
         }
       }
       return html;
