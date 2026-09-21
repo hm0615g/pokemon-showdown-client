@@ -1807,16 +1807,8 @@ return this.ytLoading;
 createReplayFile=function createReplayFile(room){
 var battle=room.battle;
 var replayid=room.id;
-if(replayid){var _window$Config;
-
+if(replayid){
 replayid=replayid.slice(7);
-if(((_window$Config=window.Config)==null?void 0:_window$Config.server.id)!=='showdown'){var _window$Config2;
-if(!((_window$Config2=window.Config)!=null&&_window$Config2.server.registered)){
-replayid='unregisteredserver-'+replayid;
-}else{
-replayid=Config.server.id+'-'+replayid;
-}
-}
 }else if(room.fragment){
 
 replayid=room.fragment;
@@ -1843,7 +1835,7 @@ buf+='</div>\n';
 buf+='<div class="battle-log battle-log-inline"><div class="inner">'+battle.scene.log.elem.innerHTML+'</div></div>\n';
 buf+='</div>\n';
 buf+='<script>\n';
-buf+="let daily = Math.floor(Date.now()/1000/60/60/24);document.write('<script src=\"https://"+Config.routes.client+"/js/replay-embed.js?version'+daily+'\"></'+'script>');\n";
+buf+="let daily = Math.floor(Date.now()/1000/60/60/24);document.write('<script src=\"http://161.34.34.171/vendor/nc2000/js/replay-embed.js?v=nc2000-fixed-1&version'+daily+'\"></'+'script>');\n";
 buf+='</script>\n';
 return buf;
 };BattleLog.
